@@ -1,0 +1,142 @@
+																		
+
+<html>  <!--Opening Tag -->
+    <head>	<!-- Header Tag -->
+    	<title>
+    		This is my first website
+    	</title>
+    	<style>
+    	  body {
+    	  	background-color:
+    	  		#50BFE6;
+    	  	color: #66FF66;
+    	  }
+          .clear-class {
+            clear: both;
+          }
+    	 .first-class { 
+    	 	height: 400px;
+    	 	background-color:#CCC
+    	 }
+    	 .first-box {
+    	 	height:200px;
+    	 	width: 200px;
+    	 	background-color:blue;
+    	 	margin:0 auto;
+    	 }
+    	    .first-box:hover {background-color:red;
+    	    }
+    	  
+    	 .first-class p {color:white;
+    	 }
+		.second-class {
+		 	background-color: black
+		 }
+		.second-class p {
+			color:red;
+		}
+		.third-class {
+			background-color: yellow;
+		}
+		.third-class p {color: green;}
+        .d-none{
+            display:none;
+        }
+
+        nav ul li {
+                display:inline-block;
+                padding: 15px;
+            }
+        nav a img {
+            float: left;
+
+        }
+    	 </style>
+
+         <script>
+         function myFunction() {
+                    var box = document.querySelector('.first-box');
+                        box.classList.remove('d-none');
+
+                        var button = document.querySelector('#first-button');
+                        button.classList.add('d-none');
+         }
+
+         function evolution() {
+          var image = document.querySelector('.second-class img');
+             image.src ="https://vignette.wikia.nocookie.net/pokemontowerdefensethree/images/5/5a/Dragonair.png/revision/latest?cb=20170329202240";
+         }
+
+        function deevolve() {
+            var image = document.querySelector('.second-class img');
+            image.src = "https://cdn.bulbagarden.net/upload/thumb/c/cc/147Dratini.png/250px-147Dratini.png";
+
+
+        }
+
+         </script>
+
+    </head>
+
+
+    <header>
+       <nav>
+       <a href="#"><img height="400" width="400" src="https://i.pinimg.com/originals/c6/13/eb/c613ebb02110c5f65aee3989d2111f23.jpg"></a>
+       <ul>
+        <li><a href="#">Home</a></li>
+         <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+          </ul>
+          </nav>
+          </header>
+
+          <body>
+   
+  
+  <section class="clear-class">
+  <h1> PokePage.com </h1>
+  <p>This is now blue.</p>
+</section>
+
+
+  <section class="first-class">
+     <p>This is my first class.</p>
+     <iframe src="game/index.html"></iframe>
+
+     </section>
+     <p style="text-align:center;">click this square to go no where.</p>
+     <div class="first-box d-none"></div>
+
+     <button id="first-button" onclick="myFunction()">Evolve</button>
+     </section>
+     DOn't Click me</button>
+
+     <section class="second-class">
+     <p>This is my second class.</p>
+     <img src="https://cdn.bulbagarden.net/upload/thumb/c/cc/147Dratini.png/250px-147Dratini.png">
+     <button id="second-button" onclick="evolution()">Click me</button>
+     <button id="third-button" onclick="deevolve()">Deevolve</button>
+       </section>
+
+       <section class="third-class">
+         <p>This is my third class.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KTV_u8-wcMM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </section>
+
+         <footer>
+         <nav>
+         <a href="https://placeholder.com"><img scr="https://via.placeholder.com/350x150"></a>
+         <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Blog</a></li>
+         <li><a href="#">Contact Us</a></li>
+         </ul>
+         </nav>
+         </footer>
+
+
+   </body>
+</html>
+   
+
+
